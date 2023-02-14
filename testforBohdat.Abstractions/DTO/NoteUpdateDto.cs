@@ -1,12 +1,10 @@
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace testforBohdan.Models;
+namespace testforBohdat.Abstractions.DTO;
 
-public class Note
+public class NoteUpdateDto
 {
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    [Required]
     public int Id { get; set; }
     [Required]
     public string Title { get; set; }

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace testforBohdan.Models.DTO;
+namespace testforBohdat.Abstractions.DTO;
 
 public class NoteDto
 {

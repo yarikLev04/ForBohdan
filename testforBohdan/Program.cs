@@ -1,19 +1,30 @@
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using testforBohdan;
-using testforBohdan.Data;
-using testforBohdan.Repository;
-using testforBohdan.Repository.IRepository;
+using testforBohdan.Middlewares;
+using testforBohdat.Abstractions.IRepository;
+using testforBohdat.Data;
+using testforBohdat.Data.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .CreateLogger();
+
+builder.Logging.ClearProviders();
+
+builder.Logging.AddSerilog();
 
 builder.Services.AddDbContext<AppDbContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnection"));
 });
 
-builder.Services.AddScoped<INoteRepository, NoteRepository>();
+builder.Services.AddScoped<INoteService, NoteService>();
 builder.Services.AddAutoMapper(typeof(MapperConfig));
-builder.Services.AddControllers(option => {}).AddNewtonsoftJson().AddXmlDataContractSerializerFormatters();
+builder.Services.AddScoped<ExceptionMiddleware>();
 
 builder.Services.AddControllers();
 
@@ -32,6 +43,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.MapControllers();
 

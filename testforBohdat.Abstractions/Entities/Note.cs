@@ -1,10 +1,7 @@
-using System.ComponentModel.DataAnnotations;
+namespace testforBohdat.Abstractions.Entities;
 
-namespace testforBohdan.Models.DTO;
-
-public class NoteCreateDto
+public class Note : BaseEntity
 {
-    [Required]
     public string Title { get; set; }
     public string? Description { get; set; }
     public string? Color { get; set; }

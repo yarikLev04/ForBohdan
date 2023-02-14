@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testforBohdan", "testforBohdan\testforBohdan.csproj", "{4494E553-FD75-49E4-88AB-4DB216112454}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testforBohdan.Data", "testforBohdan.Data\testforBohdan.Data.csproj", "{AB8D0DDD-DC56-4BEA-8ADA-3B1539F6AC28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testforBohdat.Abstractions", "testforBohdat.Abstractions\testforBohdat.Abstractions.csproj", "{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{4494E553-FD75-49E4-88AB-4DB216112454}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4494E553-FD75-49E4-88AB-4DB216112454}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4494E553-FD75-49E4-88AB-4DB216112454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB8D0DDD-DC56-4BEA-8ADA-3B1539F6AC28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8D0DDD-DC56-4BEA-8ADA-3B1539F6AC28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8D0DDD-DC56-4BEA-8ADA-3B1539F6AC28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8D0DDD-DC56-4BEA-8ADA-3B1539F6AC28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

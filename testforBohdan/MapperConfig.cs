@@ -1,6 +1,6 @@
 using AutoMapper;
-using testforBohdan.Models;
-using testforBohdan.Models.DTO;
+using testforBohdat.Abstractions.DTO;
+using testforBohdat.Abstractions.Entities;
 
 namespace testforBohdan;
 
