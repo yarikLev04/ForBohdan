@@ -1,8 +1,8 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using testforBohdat.Abstractions.DTO;
-using testforBohdat.Abstractions.Entities;
-using testforBohdat.Abstractions.IRepository;
+using testforBohdan.Abstractions.DTO;
+using testforBohdan.Abstractions.Entities;
+using testforBohdan.Abstractions.IRepository;
 
 namespace testforBohdan.Controllers;
 

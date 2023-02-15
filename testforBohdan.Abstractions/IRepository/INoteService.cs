@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using testforBohdat.Abstractions.Entities;
+using testforBohdan.Abstractions.Entities;
 
-namespace testforBohdat.Abstractions.IRepository;
+namespace testforBohdan.Abstractions.IRepository;
 
 public interface INoteService
 {

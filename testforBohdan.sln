@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testforBohdan", "testforBoh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testforBohdan.Data", "testforBohdan.Data\testforBohdan.Data.csproj", "{AB8D0DDD-DC56-4BEA-8ADA-3B1539F6AC28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testforBohdat.Abstractions", "testforBohdat.Abstractions\testforBohdat.Abstractions.csproj", "{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testforBohdan.Abstractions", "testforBohdan.Abstractions\testforBohdan.Abstractions.csproj", "{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

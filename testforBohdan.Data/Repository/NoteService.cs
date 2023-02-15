@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using testforBohdat.Abstractions.Entities;
-using testforBohdat.Abstractions.IRepository;
+using testforBohdan.Abstractions.Entities;
+using testforBohdan.Abstractions.IRepository;
 
 namespace testforBohdat.Data.Repository;
 

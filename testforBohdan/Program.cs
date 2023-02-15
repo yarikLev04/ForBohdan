@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 using testforBohdan;
 using testforBohdan.Middlewares;
-using testforBohdat.Abstractions.IRepository;
+using testforBohdan.Abstractions.IRepository;
 using testforBohdat.Data;
 using testforBohdat.Data.Repository;
 

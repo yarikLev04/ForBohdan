@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using testforBohdat.Abstractions.Entities;
+using testforBohdan.Abstractions.Entities;
 
 namespace testforBohdat.Data;
 

@@ -1,4 +1,4 @@
-namespace testforBohdat.Abstractions.Entities;
+namespace testforBohdan.Abstractions.Entities;
 
 public class BaseEntity
 {
