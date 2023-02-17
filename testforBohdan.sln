@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testforBohdan.Data", "testf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testforBohdan.Abstractions", "testforBohdan.Abstractions\testforBohdan.Abstractions.csproj", "{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testforBohdan.Services", "testforBohdan.Services\testforBohdan.Services.csproj", "{EB51F3D5-8007-4454-BC79-18B01ECE8A01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FECAE30B-E8A7-484C-9C6E-92A2C8F416CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB51F3D5-8007-4454-BC79-18B01ECE8A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB51F3D5-8007-4454-BC79-18B01ECE8A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB51F3D5-8007-4454-BC79-18B01ECE8A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB51F3D5-8007-4454-BC79-18B01ECE8A01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

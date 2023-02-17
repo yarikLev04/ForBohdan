@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace testforBohdan.Abstractions.DTO;
+namespace testforBohdan.Abstractions.DTO.Note;
 
-public class NoteUpdateDto
+public class NoteDto
 {
     [Required]
     public int Id { get; set; }
@@ -10,4 +10,6 @@ public class NoteUpdateDto
     public string Title { get; set; }
     public string? Description { get; set; }
     public string? Color { get; set; }
+    [Required]
+    public int UserId { get; set; }
 }

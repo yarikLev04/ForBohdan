@@ -1,10 +1,10 @@
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
-using testforBohdan;
 using testforBohdan.Middlewares;
-using testforBohdan.Abstractions.IRepository;
-using testforBohdat.Data;
-using testforBohdat.Data.Repository;
+using testforBohdan.Abstractions.IServices;
+using testforBohdan.Data;
+using testforBohdan.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,10 +23,14 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 });
 
 builder.Services.AddScoped<INoteService, NoteService>();
+builder.Services.AddScoped<IUserService, UserService>();
+
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Services.AddScoped<ExceptionMiddleware>();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(x =>
+    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+;
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

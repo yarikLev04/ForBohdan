@@ -1,8 +1,9 @@
 using AutoMapper;
-using testforBohdan.Abstractions.DTO;
+using testforBohdan.Abstractions.DTO.Note;
+using testforBohdan.Abstractions.DTO.User;
 using testforBohdan.Abstractions.Entities;
 
-namespace testforBohdan;
+namespace testforBohdan.Services;
 
 public class MapperConfig : Profile
 {
@@ -11,5 +12,9 @@ public class MapperConfig : Profile
         CreateMap<Note, NoteDto>().ReverseMap();
         CreateMap<Note, NoteUpdateDto>().ReverseMap();
         CreateMap<Note, NoteCreateDto>().ReverseMap();
+        
+        CreateMap<User, UserDto>().ReverseMap();
+        CreateMap<User, UserUpdateDto>().ReverseMap();
+        CreateMap<User, UserCreateDto>().ReverseMap();
     } 
 }
